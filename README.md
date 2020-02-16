@@ -6,6 +6,7 @@
 caddy镜像更新支持tls1.3
 
 # 感谢🦊大佬的保存，谢谢🙏
+# 所有的镜像都做了搬运保存
 
 # v2ray-sspanel-v3-mod_Uim-plugin
 
@@ -200,4 +201,4 @@ docker run -d --name=昵称 \
 -e MYSQLDBNAME="demo_dbname" -e MYSQLUSR="demo_user" -e MYSQLPASSWD="demo_dbpassword" -e MYSQLPORT=3306 \
 --log-opt max-size=10m --log-opt max-file=5 \
 --net=bridge -p 对接端口:对接端口/tcp -p 对接端口:对接端口/udp --restart=always \
-splendid/v2ray_v3:go_dev
+splendidwrx/v2ray_v3:go_dev
