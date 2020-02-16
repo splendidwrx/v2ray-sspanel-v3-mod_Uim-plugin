@@ -191,7 +191,7 @@ Caddyfile
 }
 ~~~
 
-# 狐狸大佬最新docker【我是个搬运工】
+# 大佬最新docker【我是个搬运工】
 
 ~~~~~
 docker run -d --name=昵称 \
