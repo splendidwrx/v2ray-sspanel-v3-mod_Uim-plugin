@@ -1,9 +1,11 @@
-# 由于hulisang大佬已经把仓库删除，本人仅做备份
+# 由于hulisang大佬已经把仓库删除，本人仅做备份的备份【套娃警告⚠️】
 下面是hulisang的原话：
 
 感恩原作者rico辛苦付出
 本人仅做备份和后续维护
 caddy镜像更新支持tls1.3
+
+# 感谢🦊大佬的保存，谢谢🙏
 
 # v2ray-sspanel-v3-mod_Uim-plugin
 
@@ -188,3 +190,14 @@ Caddyfile
   }
 }
 ~~~
+
+# 狐狸大佬最新docker【我是个搬运工】
+
+~~~~~
+docker run -d --name=昵称 \
+-e speedtest=6  -e api_port=2333 -e usemysql=0 -e downWithPanel=0 \
+-e node_id=id -e sspanel_url=网站WebAPI地址 -e key=Sspanel_Mu_Key  -e MYSQLHOST=数据库ip地址  \
+-e MYSQLDBNAME="demo_dbname" -e MYSQLUSR="demo_user" -e MYSQLPASSWD="demo_dbpassword" -e MYSQLPORT=3306 \
+--log-opt max-size=10m --log-opt max-file=5 \
+--net=bridge -p 对接端口:对接端口/tcp -p 对接端口:对接端口/udp --restart=always \
+splendid/v2ray_v3:go_dev
