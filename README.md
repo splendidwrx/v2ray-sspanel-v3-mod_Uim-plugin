@@ -162,6 +162,15 @@ chmod +x install.sh && \
 bash install.sh
 ~~~
 
+国内中转速度缓慢解决方案
+~~~
+mkdir v2ray-agent  &&  \
+cd v2ray-agent && \
+curl https://gitee.com/splendidwrx/v2ray-sspanel-v3-mod_Uim-plugin/raw/master/install.sh -o install.sh && \
+chmod +x install.sh && \
+bash install.sh
+~~~
+
 ##### 安装caddy
 
 一键安装 caddy 和cf ddns tls插件
