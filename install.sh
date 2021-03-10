@@ -318,12 +318,12 @@ config_caddy_docker_cloudflare(){
 # Install docker and docker compose
 install_docker(){
     echo -e "Starting installing Docker "
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    bash get-docker.sh
+    curl -sSL https://get.daocloud.io/docker | sh
     echo -e "Starting installing Docker Compose "
-    curl -L https://github.com/docker/compose/releases/download/1.17.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+    curl -L https://get.daocloud.io/docker/compose/releases/download/1.28.5/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
     chmod +x /usr/local/bin/docker-compose
-    curl -L https://raw.githubusercontent.com/docker/compose/1.8.0/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
+    echo -e "改源"
+    curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
     clear
     echo "Start Docker "
     service docker start
